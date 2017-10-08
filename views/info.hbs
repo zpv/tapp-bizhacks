@@ -1,0 +1,133 @@
+<style>
+
+body, html {
+    height: 100%;
+    overflow-y: hidden;
+    font-family: 'Segoe UI',SegoeUI,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    {{!-- background-color: #003b64; --}}
+}
+.b {
+    position:absolute;
+    width:300px;
+    height:250px;
+    bottom:0px;
+    right:25%;
+    left:50%;
+    margin-left:-150px;
+}
+
+.timer {
+	text-align: center;
+	color: #fff;
+	font-size: 30px;
+}
+{{!-- 
+.bgimg-1 { 
+    /* The image used */
+    background-image: url("/img/requ.png");
+
+    /* Full height */
+    height: 100%; 
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+} --}}
+
+.product-photo {
+    width: 75%;
+    margin: 0 auto;
+    display: block;
+}
+
+.product-title {
+    text-align: center;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.button { 
+        font-size: 19px;
+    width: 80vw;
+    min-width: 120px;
+    height: 60px;
+    display: block;
+    margin-top: 12px;
+    padding: 9px 12px 10px;
+    background-color: rgba(0,0,0,.2);
+    color: #000;
+    border: solid 1px transparent;
+    overflow: hidden;
+    line-height: 2;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: bottom;
+    transition: scale .2s ease-in-out;
+    color: #fff;
+    background-color: #0067b8;
+    border-radius: 0px;
+}
+.button-container {
+    margin: 0 auto;
+    width: fit-content;
+    margin-top: 70px;
+}
+
+.tapp-logo {
+        height: 75px;
+    margin: 0 auto;
+    position: absolute;
+    display: block;
+    left: calc(50% - 67px);
+    bottom: 10px;
+}
+
+.image-wrapper {
+    min-height: 200px;
+     position:relative;
+}
+
+.image-wrapper img {
+    position: absolute;
+    max-height: 200px;
+    width: auto;
+        max-width: 100vw;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.logo-container {
+       position: relative;
+    height: 100px;
+}
+
+</style>
+<div class="product">
+    <div class="image-wrapper">
+    <img class="product-photo" src="/img/{{{image}}}" />
+    </div>
+    <p class="product-title">{{{productName}}}</p>
+</div>
+
+<div class="button-container">
+<a class="button" href="{{{productLink}}}">Product Info</a>
+<a class="button" href="/request?productid={{{id}}}">Request Help</a>
+</div>
+
+{{!-- <div class="logo-container">
+    <img class="tapp-logo" src="/img/tapp.png">
+</div>  --}}
+	{{!-- <div class="b"> 
+		<h1 class="timer">Staff help has been requested!</h1>
+		<h1 class="timer" id="timerText">15</h1>
+	</div> --}}
+
+<!--<div class="jumbotron" style="">
+  <h1>You've requested help at {{location}}!</h1>
+  <p class="lead" id="helpText">Awaiting staff response... </p>
+  <p id="timerText">15</p>
+</div>-->

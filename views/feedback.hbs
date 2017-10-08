@@ -1,0 +1,143 @@
+<style>
+
+
+body, html {
+    height: 100%;
+    overflow-y: hidden;
+    font-family: 'Segoe UI',SegoeUI,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    {{!-- background-color: #003b64; --}}
+}
+.b {
+    position:absolute;
+    width:300px;
+    height:250px;
+    bottom:0px;
+    right:25%;
+    left:50%;
+    margin-left:-150px;
+}
+
+.timer {
+	text-align: center;
+	color: #fff;
+	font-size: 30px;
+}
+
+.logo-container {
+       position: relative;
+    height: 100px;
+}
+
+{{!-- .bgimg-1 { 
+    /* The image used */
+    background-image: url("/img/otw.png");
+
+    /* Full height */
+    height: 100%; 
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+} --}}
+
+video {
+    display: none;
+}
+
+.tapp-logo {
+        height: 75px;
+    margin: 0 auto;
+    position: absolute;
+    display: block;
+    left: calc(50% - 67px);
+    bottom: 10px;
+}
+
+.rep-logo {
+    
+}
+
+.rep {
+    width: 250px;
+    margin: 0 auto;
+    display: block;
+    border-radius: 100%;
+    border: 4px solid #0278d7;
+    box-shadow: 0px 5px 6px grey;
+}
+
+.position-header {
+    margin-bottom: 30px;
+}
+
+h2 {
+    color: #0278d7;
+    text-align: center;
+}
+
+.text-container {
+    margin-top: 35px;
+}
+
+h3{
+    text-align: center;
+}
+
+.button { 
+        font-size: 19px;
+    min-width: 120px;
+    display: inline-block;
+    margin-top: 12px;
+    padding: 9px 12px 10px;
+    background-color: rgba(0,0,0,.2);
+    color: #000;
+    border: solid 1px transparent;
+    overflow: hidden;
+    line-height: 1;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: bottom;
+    transition: scale .2s ease-in-out;
+    color: #fff;
+    background-color: #0067b8;
+    border-radius: 0px;
+}
+.button-container {
+    margin: 0 auto;
+    width: fit-content;
+}
+
+.button-container input {
+    border: 1px solid rgba(0,0,0,0.6);
+    width: 65vw;
+    background: rgba(255,255,255,0.2);
+    border-color: rgba(0,0,0,0.4);
+    height: 36px;
+    box-sizing: border-box;
+    outline: 0;
+    outline-color: transparent !important;
+    padding: 7px 38px 7px 10px;
+}
+
+</style>
+
+<script src="/js/polling2.js"></script>
+<h2 class="position-header">Microsoft Specialist</h2>
+<img class="rep" src="/img/msft-rep.png">
+<div class="text-container">
+<h2>SREENI</h2>
+
+<h3>Thank you for the feedback!</h3>
+<p>debug: positivity level: {{{positivity}}}</p>
+
+
+{{!-- 
+<div class="logo-container">
+    <img class="tapp-logo" src="/img/tapp.png">
+</div>  --}}
+<!--<div class="jumbotron" style="">
+  <h1>You've requested help at {{location}}!</h1>
+  <p class="lead" id="helpText">Awaiting staff response... </p>
+  <p id="timerText">15</p>
+</div>-->

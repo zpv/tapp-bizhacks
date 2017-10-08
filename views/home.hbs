@@ -1,0 +1,79 @@
+<style>
+
+body, html {
+    height: 100%;
+    overflow-y: hidden;
+    font-family: 'Segoe UI',SegoeUI,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    {{!-- background-color: #003b64; --}}
+}
+.b {
+    position:absolute;
+    width:300px;
+    height:250px;
+    bottom:0px;
+    right:25%;
+    left:50%;
+    margin-left:-150px;
+}
+
+.timer {
+	text-align: center;
+
+	font-size: 30px;
+}
+
+.bgimg-1 { 
+    /* The image used */
+    background-image: url("/img/requ.png");
+
+    /* Full height */
+    height: 100%; 
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+
+
+.tapp-logo {
+        height: 75px;
+    margin: 0 auto;
+    position: absolute;
+    display: block;
+    left: calc(50% - 67px);
+    bottom: 10px;
+}
+
+.loading {
+    margin: 0 auto;
+    display: block;
+    margin-top: 25%;
+}
+
+.logo-container {
+       position: relative;
+    height: 100px;
+}
+
+
+
+</style>
+<script src="/js/polling.js"></script>
+<img src="/img/magnify.gif" class="loading">
+{{!-- <div class="bgimg-1"> --}}
+	<div class="b">
+		<h1 class="timer">Staff help has been requested!</h1>
+		<h1 class="timer" id="timerText">15</h1>
+	</div>
+{{!-- <div class="logo-container">
+    <img class="tapp-logo" src="/img/tapp.png">
+</div>  --}}
+{{!-- </div> --}}
+
+<!--<div class="jumbotron" style="">
+  <h1>You've requested help at {{location}}!</h1>
+  <p class="lead" id="helpText">Awaiting staff response... </p>
+  <p id="timerText">15</p>
+</div>-->
